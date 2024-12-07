@@ -1,0 +1,65 @@
+[project]
+name = "advent-of-code"
+description = "Advent of Code"
+keywords = ["advent-of-code"]
+
+version = "0.1.0"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+readme = "README.md"
+authors = [
+    {name="Hans Spaans", email="1072510+hspaans@users.noreply.github.com"},
+]
+maintainers = [
+    {name="Hans Spaans", email="1072510+hspaans@users.noreply.github.com"},
+]
+
+requires-python = ">= 3.10"
+
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+]
+
+deploy = [
+]
+
+docs = [
+    "Sphinx>=8.0.0,<8.1.0",
+    "sphinx-autobuild",
+    "sphinx-toolbox==3.8.0",
+]
+
+test = [
+    "pytest>=8.0.0,<9.0.0",
+    "pytest-sphinx",
+    "tox>=4.0.0,<5.0.0",
+]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+homepage = "https://github/hspaans/advent-of-code"
+documentation = "https://github/hspaans/advent-of-code"
+repository = "https://github/hspaans/advent-of-code"
+issues = "https://github/hspaans/advent-of-code/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.pymarkdown]
+plugins.md013.enabled = false
